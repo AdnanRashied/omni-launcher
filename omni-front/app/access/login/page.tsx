@@ -7,19 +7,13 @@ const LoginPage: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const response = await fetch("", {
+    const response = await fetch("/api/loginApi", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ email, password }),
     });
-
-    if (response.ok) {
-      console.log("Got it back here.");
-    } else {
-      console.log("Failed on this page.");
-    }
   };
   return (
     <div className="container mx-auto p-4">

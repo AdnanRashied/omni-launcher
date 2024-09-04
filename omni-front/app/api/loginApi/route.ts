@@ -4,7 +4,7 @@ export async function POST(request: NextRequest) {
   try {
     const { username: email, password } = await request.json();
 
-    const response = await fetch("", {
+    const response = await fetch("http://localhost:3001/authentication/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
