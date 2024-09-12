@@ -7,7 +7,7 @@ const LoginPage: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const response = await fetch("/api/loginApi", {
+    const response = await fetch("Api_route", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

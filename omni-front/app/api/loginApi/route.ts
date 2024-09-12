@@ -2,22 +2,25 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
-    const { username: email, password } = await request.json();
+    const { email, password } = await request.json();
 
-    const response = await fetch("http://localhost:3001/authentication/login", {
+    const response = await fetch("Gateway Route", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username: email, password }),
+      body: JSON.stringify({ email, password }),
     });
 
     if (response.ok) {
-      return NextResponse.json({ message: "Payload has been sent" });
+      return NextResponse.json(
+        { message: "Login successful" },
+        { status: 200 }
+      );
     } else {
       return NextResponse.json(
-        { message: "Payload failed to send" },
-        { status: 405 }
+        { message: "Invalid credentials" },
+        { status: 401 }
       );
     }
   } catch (error) {
