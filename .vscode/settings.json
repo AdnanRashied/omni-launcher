@@ -7,6 +7,17 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     ".vscode": true,
-    "omni-launcher.code-workspace": true
+    "omni-launcher.code-workspace": true,
+    "omni-front/node_modules": true,
+    "omni-front/.eslintrc.json": true,
+    "omni-front/postcss.config.mjs": true,
+    "omni-front/tailwind.config.ts": true,
+    "omni-front/.next": true,
+    "omni-front/README.md": true,
+    "omni-front/package-lock.json": true,
+    "omni-front/next.config.mjs": true,
+    "omni-front/next-env.d.ts": true,
+    "omni-front/public": true,
+    "omni-front/package.json": true
   }
 }
