@@ -5,6 +5,20 @@
     }
   ],
   "settings": {
-    "hide-files.files": [".vscode", "omni-launcher.code-workspace"]
+    "hide-files.files": [
+      ".vscode",
+      "omni-launcher.code-workspace",
+      "omni-front/node_modules",
+      "omni-front/.eslintrc.json",
+      "omni-front/postcss.config.mjs",
+      "omni-front/tailwind.config.ts",
+      "omni-front/.next",
+      "omni-front/README.md",
+      "omni-front/package-lock.json",
+      "omni-front/next.config.mjs",
+      "omni-front/next-env.d.ts",
+      "omni-front/public",
+      "omni-front/package.json"
+    ]
   }
 }
